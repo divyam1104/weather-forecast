@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>weather forecast</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+            <!--header-->
+            <div>
+                <div class="inline_div" id="heading_div">
+                    <h1 id="heading">weather forecast</h1>
+                    <img id="logo" src="weather logo.png">
+                </div>
+            </div>
+            <!--search box-->
+            <div>
+                <div class="inline_div" id="input_div">
+                    <input type="text" placeholder="enter city" id="city_input">
+                    <img id="search" src="search.png" onclick="get_results();">
+                </div>
+            </div>
+            <!--error-->
+            <b><p id="label">KINDLY ENTER A VALID CITY NAME</p></b>
+            <!--switch container (for selecting temperature unit)-->
+            <div class="inline_div" id="switch_container">
+                <h2>celsius</h2>
+                <label class="switch" id="switch_">
+                    <input type="checkbox" id="tog_btn">
+                    <span class="slider round"></span>
+                </label>
+                <h2>fahrenheit</h2>
+            </div>
+            <!--message-->
+            <p>NOTE - click on the search icon after you change the unit i.e. °C and °F</p>
+            <!--result container div-->
+           <div class="result_container">
+            <div>
+                <div class="inline_div">
+                    <h3>Current Temperature: </h3>
+                    <h3 id="result_current"></h3>
+                </div>
+            </div>
+            <div>
+                <div class="inline_div">
+                    <h3>Minimum Temperature: </h3>
+                    <h3 id="result_min"></h3>
+                </div>
+            </div>
+            <div>
+                <div class="inline_div">
+                    <h3>Maximum Temperature: </h3>
+                    <h3 id="result_max"></h3>
+                </div>
+            </div>
+            <div>
+                <div class="inline_div">
+                    <h3>Humidity: </h3>
+                    <h3 id="result_hum"></h3>
+                </div>
+            </div>
+            <div>
+                <div class="inline_div">
+                    <h3>Wind Speed: </h3>
+                    <h3 id="result_wind"></h3>
+                </div>
+            </div>
+           </div>
+        </center>
+    </body>
+</html>
